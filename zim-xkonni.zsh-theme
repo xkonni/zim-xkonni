@@ -56,11 +56,11 @@ if (( ${+functions[git-info]} )); then
   zstyle ':zim:git-info:branch' format '%b'
   zstyle ':zim:git-info:commit' format 'HEAD (%c)'
   zstyle ':zim:git-info:action' format ' (${(U):-%s})'
-  zstyle ':zim:git-info:stashed' format ' '            #  
-  zstyle ':zim:git-info:unindexed' format ' '          #  
-  zstyle ':zim:git-info:indexed' format ' '            #  
-  zstyle ':zim:git-info:ahead' format ' '
-  zstyle ':zim:git-info:behind' format ' '
+  zstyle ':zim:git-info:stashed' format '# '            #   
+  zstyle ':zim:git-info:unindexed' format ' '          #   
+  zstyle ':zim:git-info:indexed' format ' '            #   
+  zstyle ':zim:git-info:ahead' format '> '              # 
+  zstyle ':zim:git-info:behind' format '< '             # 
   zstyle ':zim:git-info:keys' format \
       'status' '%F{${COLOR_RED}}%S%I%i%A%B' \
       'prompt' '  %%B%F{${COLOR_YELLOW}}%b%c%s${(e)git_info[status]:+" ${(e)git_info[status]}"}%f%%b '
